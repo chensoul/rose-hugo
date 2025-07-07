@@ -35,6 +35,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
     name = "关于"
     url = "/about/"
     weight = 4
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5
 
   [[menu.blogroll]]
     name = "Hugo Rose"
