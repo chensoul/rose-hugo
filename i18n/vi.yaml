@@ -1,3 +1,5 @@
+- id: related_posts
+  translation: Bài viết liên quan
 # General
 - id: read_more
   translation: "Đọc tiếp…"

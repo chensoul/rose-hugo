@@ -1,3 +1,5 @@
+- id: related_posts
+  translation: 関連記事
 # General
 - id: read_more
   translation: "続きを読む…"

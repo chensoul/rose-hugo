@@ -1,3 +1,5 @@
+- id: related_posts
+  translation: Похожие статьи
 # General
 - id: read_more
   translation: "Читать далее…"

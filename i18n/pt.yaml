@@ -1,3 +1,5 @@
+- id: related_posts
+  translation: Artigos relacionados
 # General
 - id: read_more
   translation: "Leia mais…"
