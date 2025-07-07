@@ -1,24 +1,28 @@
 # Hugo Rose
 
-**hugo-rose** is a responsive, simple, clean and content-focused [Hugo](https://gohugo.io/) theme based on the
-[MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) theme.
+**Hugo Rose** is a responsive, clean, and content-focused Hugo theme inspired by the MH Magazine lite WordPress theme. It is designed for personal blogs, tech sites, and content-driven websites that value readability and flexibility.
 
-**[Demo](https://blog.chensoul.cc/)**
+## Key Features
 
-![screenshot](https://raw.githubusercontent.com/chensoul/hugo-rose/master/images/screenshot.png)
+- **Responsive Design**: Looks great on all devices.
+- **Main & Secondary Menus**: Flexible navigation for your content.
+- **Widgetized Sidebar**: Sidebar supports widgets such as search, recent posts, categories, tags, social links, blogroll and languages.
+- **Multilingual Support**: 15+ languages built-in, easy to extend.
+- **Configurable Theme Settings**: Control sidebar position, author box, post navigation, highlight color, and more via `config.toml`.
+- **Customizable Widgets**: Enable/disable and reorder sidebar widgets per page or globally.
+- **SEO & Social Integration**: Built-in Open Graph, Schema, Twitter Cards, Disqus, Google Analytics.
+- **Post Meta Customization**: Choose which meta info (date, categories, tags, author, etc.) to display and in what order.
+- **Custom Google Fonts**: Easily set your preferred font family.
+- **MathJax & Table of Contents**: Out-of-the-box support for math and long-form content.
+- **Mermaid Diagram Support**: Easily embed flowcharts, sequence diagrams, and more using Mermaid syntax.
+- **SVG Icon System**: Modern, scalable icons for social and UI elements.
+- **Thumbnail Support**: Show thumbnails on lists or posts as you like.
+- **Recent Posts, Categories, Tags, Social, Languages Widgets**: All configurable and translatable.
+- **Wide Browser Compatibility**: Works on all modern browsers and many legacy ones.
+- **Back to Top Button**: Built-in floating button for quickly returning to the top of the page.
+- **Fast, Simple, and GPLv2 Licensed**: Open source and easy to use.
 
-**Features:**
-
-+ Responsive design
-+ Main & secondary menus
-+ Widgetized sidebar
-+ Translations. Over 15 languages and counting
-+ Configurable theme settings (sidebar position, author box, post navigation, highlight color) via `config.toml`
-+ Hugo internal templates (Open Graph, Schema, Twitter Cards, Disqus, Google Analytics)
-+ Wide cross-browser compatibility
-  + *Desktop: IE11+, Chrome, Firefox, Safari*
-  + *Mobile: Android browser (on Android 4.4+), Safari (on iOS 7+), Google Chrome, Opera mini*
-+ Custom Google Fonts support, MathJax, Table of Contents, SVG icons and much more…
+For full documentation and advanced configuration, see the [GitHub repo](https://github.com/chensoul/hugo-rose).
 
 ## Installation
 
@@ -53,7 +57,7 @@ theme = "hugo-rose"
 ```toml
 baseurl = "/"
 title = "hugo-rose"
-languageCode = "en-us"
+defaultContentLanguage = "en-us"
 theme = "hugo-rose"
 
 summaryLength = 6
@@ -74,6 +78,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [Params]
   author = "hugo-rose"
   avatar = "/image/favicon.webp"
+  #logo = "/image/logo.webp" # Logo image
   subtitle = "Just another blog" # Logo subtitle
   description = "Hugo Rose's Personal blog about everything" # Description of your site
   opengraph = true # Enable OpenGraph if true
@@ -119,6 +124,20 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # Control thumbnail visibility, eg: list、post
   visibility = ["list"]
 
+[Params.widgets.social]
+  cached = false # activate cache if true
+  # Enable parts of social widget
+  facebook = "username"
+  twitter = "username"
+  instagram = "username"
+  linkedin = "username"
+  telegram = "username"
+  github = "username"
+  gitlab = "username"
+  bitbucket = "username"
+  email = "username@gmail.com"
+  youtube = "username"
+  
 # Custom social links
 [[Params.widgets.social.custom]]
   title = "Youtube"

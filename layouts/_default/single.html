@@ -24,17 +24,18 @@
 			</footer>
 			{{- end }}
 			{{ partial "share.html" . }}
-			{{- if .Params.categories }}
-			<footer class="post__footer">
-				{{ partial "post_related.html" . }}
-			</footer>
-			{{- end }}
 		</footer>
-
 	</article>
 </main>
 {{ partial "authorbox.html" . }}
 {{ partial "pagination.html" . }}
+
+{{- if .Params.categories }}
+<footer class="post__footer">
+	{{ partial "post_related.html" . }}
+</footer>
+{{- end }}
+
 {{ partial "comments.html" . }}
 {{ partial "mathjax.html" . }}
 {{ partial "mermaid.html" . }}

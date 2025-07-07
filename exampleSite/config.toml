@@ -75,7 +75,6 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # Control thumbnail visibility, eg: list、post
   visibility = ["list"]
 
-
 [Params.widgets]
   recent_num = 10 # Set the number of articles in the "Recent articles" widget
   categories_counter = true # Enable counter for each category in "Categories" widget
