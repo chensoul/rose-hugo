@@ -127,7 +127,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   # customFooter = ""
   # customSidebar = ""
 
-[Params.style.vars]
+[Params.style]
   highlightColor = "#e22d30" # Override highlight color
 
   # Override font-family sets

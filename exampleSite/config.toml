@@ -99,8 +99,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   email = "username@gmail.com"
   youtube = "username"
 
-
-[Params.style.vars]
+[Params.style]
   highlightColor = "#e22d30" # Override highlight color
 
   # Override font-family sets
