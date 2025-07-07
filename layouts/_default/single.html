@@ -27,7 +27,6 @@
 		</footer>
 	</article>
 </main>
-{{ partial "authorbox.html" . }}
 {{ partial "pagination.html" . }}
 
 {{- if .Params.categories }}
@@ -35,6 +34,8 @@
 	{{ partial "post_related.html" . }}
 </footer>
 {{- end }}
+
+{{ partial "authorbox.html" . }}
 
 {{ partial "comments.html" . }}
 {{ partial "mathjax.html" . }}

@@ -4,16 +4,14 @@
 	{{- if .PrevInSection }}
 	<div class="pagination__item pagination__item--prev">
 		<a class="pagination__link" href="{{ .PrevInSection.RelPermalink }}" rel="prev">
-			<span class="pagination__subtitle">«&thinsp;{{ T "post_nav_prev" }}</span>
-			<p class="pagination__title">{{ .PrevInSection.Title }}</p>
+			<p class="pagination__title">«&thinsp;{{ T "post_nav_prev" }}: {{ .PrevInSection.Title }}</p>
 		</a>
 	</div>
 	{{- end }}
 	{{- if .NextInSection }}
 	<div class="pagination__item pagination__item--next">
 		<a class="pagination__link" href="{{ .NextInSection.RelPermalink }}" rel="next">
-			<span class="pagination__subtitle">{{ T "post_nav_next" }}&thinsp;»</span>
-			<p class="pagination__title">{{ .NextInSection.Title }}</p>
+			<p class="pagination__title">&thinsp;» {{ T "post_nav_next" }}: {{ .NextInSection.Title }}</p>
 		</a>
 	</div>
 	{{- end }}
