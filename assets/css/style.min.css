@@ -668,7 +668,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .content a,
 .warning a,
 .authorbox__description a,
-.pagination a,
+.main .pagination a,
 .post-related a {
 	font-weight: 700;
 	color: {{ $highlightColor }};
@@ -677,7 +677,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .content a:hover,
 .warning a:hover,
 .authorbox__description a:hover,
-.pagination a:hover,
+.main .pagination a:hover,
 .post-related a:hover {
 	color: black;
 	text-decoration: underline;
@@ -924,8 +924,12 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	padding: 5px 10px;
 	font-weight: 700;
 	color: #000;
+	background: #f5f5f5;
 }
 
+.pagination__item a {
+	color: {{ $highlightColor }};
+}
 
 /* pagination (prev/next links) navigation */
 .pagination {
@@ -959,6 +963,10 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item--next {
 	margin-left: auto;
 	text-align: right;
+}
+
+.list .pagination__item--next a {
+	color: white
 }
 
 .pagination__link {

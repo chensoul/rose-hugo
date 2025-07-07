@@ -1,0 +1,18 @@
+{{- if or (.PrevInSection) (.NextInSection) }}
+<nav class="pagination flex">
+	{{- if .PrevInSection }}
+	<div class="pagination__item pagination__item--prev">
+		<a class="pagination__link" href="{{ .PrevInSection.RelPermalink }}" rel="prev">
+			<p class="pagination__title">«&thinsp;{{ T "post_nav_prev" }}: {{ .PrevInSection.Title }}</p>
+		</a>
+	</div>
+	{{- end }}
+	{{- if .NextInSection }}
+	<div class="pagination__item pagination__item--next">
+		<a class="pagination__link" href="{{ .NextInSection.RelPermalink }}" rel="next">
+			<p class="pagination__title">&thinsp;» {{ T "post_nav_next" }}: {{ .NextInSection.Title }}</p>
+		</a>
+	</div>
+	{{- end }}
+</nav>
+{{- end }}
