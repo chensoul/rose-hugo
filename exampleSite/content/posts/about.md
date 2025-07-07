@@ -27,6 +27,8 @@ This site is built with [Hugo](https://gohugo.io/) and the [Hugo Rose](https://g
 - **Recent Posts, Categories, Tags, Social, Languages Widgets**: All configurable and translatable.
 - **Wide Browser Compatibility**: Works on all modern browsers and many legacy ones.
 - **Back to Top Button**: Built-in floating button for quickly returning to the top of the page.
+- **Related Posts**: Automatic related articles section on each post page, with full i18n support.
+- **Beautiful Social Sharing**: Share to Twitter, Facebook, LinkedIn, Telegram, Email, Weibo, and more with colorful SVG icons.
 - **Fast, Simple, and GPLv2 Licensed**: Open source and easy to use.
 
 For full documentation and advanced configuration, see the [GitHub repo](https://github.com/chensoul/hugo-rose).

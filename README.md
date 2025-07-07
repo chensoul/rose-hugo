@@ -20,6 +20,8 @@
 - **Recent Posts, Categories, Tags, Social, Languages Widgets**: All configurable and translatable.
 - **Wide Browser Compatibility**: Works on all modern browsers and many legacy ones.
 - **Back to Top Button**: Built-in floating button for quickly returning to the top of the page.
+- **Related Posts**: Automatic related articles section on each post page, with full i18n support.
+- **Beautiful Social Sharing**: Share to Twitter, Facebook, LinkedIn, Telegram, Email, Weibo, and more with colorful SVG icons.
 - **Fast, Simple, and GPLv2 Licensed**: Open source and easy to use.
 
 For full documentation and advanced configuration, see the [GitHub repo](https://github.com/chensoul/hugo-rose).
@@ -75,6 +77,33 @@ ignoreLogs = ['warning-goldmark-raw-html']
   tags="/tags/:slug/"
   pages="/:slug/"
 
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "分类"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5
+
+  [[menu.blogroll]]
+    name = "Hugo Rose"
+    url = "https://github.com/hugo-rose"
+    weight = 1
+    
 [Params]
   author = "hugo-rose"
   avatar = "/image/favicon.webp"
