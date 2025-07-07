@@ -1,0 +1,27 @@
+<div class="social__content">
+	<span>Share:</span>
+	<a class="social__link btn" href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" target="_blank"
+	   title="Twitter" rel="noopener">
+		{{ partial "svg/twitter.svg" (dict "class" "social__link-icon") }}
+	</a>
+	<a class="social__link btn" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank"
+	   title="Facebook" rel="noopener">
+		{{ partial "svg/facebook.svg" (dict "class" "social__link-icon") }}
+	</a>
+	<a class="social__link btn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}"
+	   target="_blank" title="LinkedIn" rel="noopener">
+		{{ partial "svg/linkedin.svg" (dict "class" "social__link-icon") }}
+	</a>
+
+	<a class="social__link btn" href="https://t.me/share/url?url={{ .Permalink }}&text={{ .Title }}" target="_blank"
+	   title="Telegram" rel="noopener">
+		{{ partial "svg/telegram.svg" (dict "class" "social__link-icon") }}
+	</a>
+	<a class="social__link btn" href="mailto:?subject={{ .Title }}&body={{ .Permalink }}" title="Share by Email">
+		{{ partial "svg/email.svg" (dict "class" "social__link-icon") }}
+	</a>
+	<a class="social__link btn" href="https://service.weibo.com/share/share.php?url={{ .Permalink }}&title={{ .Title }}"
+	   target="_blank" title="Weibo" rel="noopener">
+		{{ partial "svg/weibo.svg" (dict "class" "social__link-icon") }}
+	</a>
+</div>

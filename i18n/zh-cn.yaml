@@ -1,3 +1,5 @@
+- id: related_posts
+  translation: 相关文章
 # General
 - id: read_more
   translation: "更多…"
@@ -65,6 +67,9 @@
 - id: footer_credits
   translation: "基于 <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> 引擎和 \
   <a href=\"https://github.com/chensoul/hugo-rose/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> 主题"
+
+- id: related_post
+  translation: "相关文章"
 
 # 404
 - id: 404_title

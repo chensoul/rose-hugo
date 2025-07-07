@@ -2,11 +2,16 @@
 {{- $inputName := .Site.Params.widgets.search.input.name | default "sitesearch" -}}
 {{- $inputPre := .Site.Params.widgets.search.input.pre -}}
 
-<div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="{{ $actionURL }}" target="_blank">
-		<label for="search-field" class="visually-hidden">{{ T "search_placeholder" }}</label>
-		<input id="search-field" class="widget-search__field" type="search" placeholder="{{ T "search_placeholder" }}" value="" name="q" aria-label="{{ T "search_placeholder" }}">
-		<input class="widget-search__submit" type="submit" value="Search" aria-label="Search">
-		{{ if $inputName -}}<input type="hidden" name="{{ $inputName }}" value="{{ $inputPre }}{{ .Site.BaseURL }}">{{- end }}
-	</form>
+<div class="widget">
+	<h4 class="widget__title">{{ T "search_placeholder" }}</h4>
+
+	<div class="widget__content">
+		<form class="widget-search__form" role="search" method="get" action="{{ $actionURL }}" target="_blank">
+			<input id="search-field" class="widget-search__field" type="search"
+				   placeholder="{{ T "search_placeholder" }}" value="" name="q" aria-label="{{ T "search_placeholder" }}">
+			<input class="widget-search__submit" type="submit" value="Search" aria-label="Search">
+			{{ if $inputName -}}<input type="hidden" name="{{ $inputName }}" value="{{ $inputPre }}{{ .Site.BaseURL }}">{{-
+			end }}
+		</form>
+	</div>
 </div>
