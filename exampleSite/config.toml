@@ -1,0 +1,87 @@
+baseurl = "/"
+title = "Hugo Rose"
+defaultContentLanguage = 'zh-cn'
+theme = "hugo-rose"
+
+summaryLength = 6
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[services.disqus]
+  shortname = "" # Enable Disqus by entering your Disqus shortname
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts="/posts/:year/:month/:day/:slug/"
+  categories="/categories/:slug/"
+  tags="/tags/:slug/"
+  pages="/:slug/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+  [[menu.blogroll]]
+    name = "Hugo Rose"
+    url = "https://github.com/hugo-rose"
+    weight = 1
+
+[Params]
+  author = "hugo-rose"
+  avatar = "/image/avatar.png"
+  #logo = "/image/logo.webp" # Logo image
+  subtitle = "Just another blog" # Logo subtitle
+  description = "A Personal blog about everything" # Description of your site
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = true # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = false # Enable Table of Contents
+  #pagination = true # Show pagination navigation (prev/next links) at the bottom of pages if true
+  post_meta = [ "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["posts"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  # customHeader = ""
+  # customFooter = ""
+  # customSidebar = ""
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order: "search", "recent", "categories", "taglist", "languages", "blogroll"
+  widgets = ["search", "recent", "categories", "taglist"]
+
+[Params.widgets]
+  recent_num = 10 # Set the number of articles in the "Recent articles" widget
+  categories_counter = true # Enable counter for each category in "Categories" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[Params.style.vars]
+  highlightColor = "#e22d30" # Override highlight color
+
+  # Override font-family sets
+  # googleFontsLink = "https://fonts.loli.net/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  # Take care of different quotes OR escaping symbols in these params if necessary
+  fontFamilyPrimary = '"Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif'
+  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"

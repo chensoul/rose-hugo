@@ -1,0 +1,7 @@
+{{ if and .IsPage (.Store.Get "hasMermaid") }}
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdmirror.com/npm/mermaid/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({ startOnLoad: true });
+</script>
+{{ end }}
