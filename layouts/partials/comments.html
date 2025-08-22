@@ -4,8 +4,12 @@
 {{- else }}
 	{{- $server = .Site.IsServer }}
 {{- end }}
-{{- if and .Site.Config.Services.Disqus.Shortname (index .Params "comments" | default "true") (not $server) }}
+{{ if and .Site.Params.Disqus.enabled (.Params.Disqus | default true) }}
 <section class="comments">
 	{{ template "_internal/disqus.html" . }}
 </section>
 {{- end }}
+
+{{ if and .Site.Params.remark42.enabled (.Params.remark42 | default true) }}
+	{{ partial "remark42.html" . }}
+{{ end }}

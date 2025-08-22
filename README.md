@@ -65,9 +65,6 @@ theme = "hugo-rose"
 summaryLength = 6
 ignoreLogs = ['warning-goldmark-raw-html']
 
-[services.disqus]
-  shortname = "" # Enable Disqus by entering your Disqus shortname
-
 [pagination]
   pagerSize = 10
 
@@ -184,6 +181,12 @@ ignoreLogs = ['warning-goldmark-raw-html']
   [Params.widgets.search.input]
     name = "sitesearch"
     pre = ""
+    
+[Params.remark42]
+  enabled = true
+  host = "https://remark42.example.com"
+  site = "remark42"
+  locale = "zh"
 ```
 
 **Do not copy example config as-is**. Use only those parameters that you need.
