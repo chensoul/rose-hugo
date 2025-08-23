@@ -5,9 +5,9 @@ authorbox: false
 sidebar: false
 ---
 
-This site is built with [Hugo](https://gohugo.io/) and the [Hugo Rose](https://github.com/chensoul/rose-hugo) theme.
+This site is built with [Hugo](https://gohugo.io/) and the [Rose Hugo](https://github.com/chensoul/rose-hugo) theme.
 
-**Hugo Rose** is a responsive, clean, and content-focused Hugo theme inspired by the MH Magazine lite WordPress theme. It is designed for personal blogs, tech sites, and content-driven websites that value readability and flexibility.
+**Rose Hugo** is a responsive, clean, and content-focused Hugo theme inspired by the MH Magazine lite WordPress theme. It is designed for personal blogs, tech sites, and content-driven websites that value readability and flexibility.
 
 ## Key Features
 

@@ -65,7 +65,7 @@
 - id: footer_credits
   translation:
     "Gegenereerd met <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> en het \
-    <a href=\"https://github.com/chensoul/rose-hugo/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> theme."
+    <a href=\"https://github.com/chensoul/rose-hugo/\" rel=\"nofollow noopener\" target=\"_blank\">Rose Hugo</a> theme."
 
 # 404
 - id: 404_title

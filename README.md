@@ -1,6 +1,6 @@
 # Rose Hugo
 
-**Hugo Rose** is a responsive, clean, and content-focused Hugo theme inspired by the MH Magazine lite WordPress theme. It is designed for personal blogs, tech sites, and content-driven websites that value readability and flexibility.
+**Rose Hugo** is a responsive, clean, and content-focused Hugo theme inspired by the MH Magazine lite WordPress theme. It is designed for personal blogs, tech sites, and content-driven websites that value readability and flexibility.
 
 ## Key Features
 
@@ -97,7 +97,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     weight = 5
 
   [[menu.blogroll]]
-    name = "Hugo Rose"
+    name = "Rose Hugo"
     url = "https://github.com/rose-hugo"
     weight = 1
     
@@ -106,7 +106,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   avatar = "/image/favicon.webp"
   #logo = "/image/logo.webp" # Logo image
   subtitle = "Just another blog" # Logo subtitle
-  description = "Hugo Rose's Personal blog about everything" # Description of your site
+  description = "Rose Hugo's Personal blog about everything" # Description of your site
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true

@@ -65,7 +65,7 @@
 - id: footer_credits
   translation:
     "Létrehozva <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> és \
-    <a href=\"https://github.com/chensoul/rose-hugo/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> témával."
+    <a href=\"https://github.com/chensoul/rose-hugo/\" rel=\"nofollow noopener\" target=\"_blank\">Rose Hugo</a> témával."
 
 # 404
 - id: 404_title

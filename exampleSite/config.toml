@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "Hugo Rose"
+title = "Rose Hugo"
 defaultContentLanguage = 'zh-cn'
 theme = "rose-hugo"
 
@@ -37,7 +37,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     weight = 5
 
   [[menu.blogroll]]
-    name = "Hugo Rose"
+    name = "Rose Hugo"
     url = "https://github.com/rose-hugo"
     weight = 1
 
