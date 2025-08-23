@@ -1,11 +1,11 @@
 {{- if $thumbnail := .page.Params.thumbnail }}
 	{{- $class := .class }}
-	{{- $visibility := .page.Site.Params.thumbnail.visibility | default (slice "list" "post") }}
+	{{- $visibility := .page.Site.Params.thumbnail.visibility | default (slice "list") }}
 
 	{{- $valueType := printf "%T" $thumbnail -}}
 	{{- $isMap := in $valueType "map" -}}
 	{{- if $isMap }}
-		{{ $visibility = default (slice "list" "post") (default .page.Site.Params.thumbnail.visibility "list") }}
+		{{ $visibility = default (slice "list") (default .page.Site.Params.thumbnail.visibility "list") }}
 	{{- end }}
 
 	{{- if in $visibility $class }}
