@@ -1,65 +1,163 @@
-# Rose Hugo
+# 🌹 Rose Hugo
 
-**Rose Hugo** is a responsive, clean, and content-focused Hugo theme inspired by the MH Magazine lite WordPress theme. It is designed for personal blogs, tech sites, and content-driven websites that value readability and flexibility.
+<div align="center">
 
-## Key Features
+A modern, responsive Hugo theme for content creators
 
-- **Responsive Design**: Looks great on all devices.
-- **Main & Secondary Menus**: Flexible navigation for your content.
-- **Widgetized Sidebar**: Sidebar supports widgets such as search, recent posts, categories, tags, social links, blogroll and languages.
-- **Multilingual Support**: 15+ languages built-in, easy to extend.
-- **Configurable Theme Settings**: Control sidebar position, author box, post navigation, highlight color, and more via `config.toml`.
-- **Customizable Widgets**: Enable/disable and reorder sidebar widgets per page or globally.
-- **SEO & Social Integration**: Built-in Open Graph, Schema, Twitter Cards, Disqus, Google Analytics.
-- **Post Meta Customization**: Choose which meta info (date, categories, tags, author, etc.) to display and in what order.
-- **Custom Google Fonts**: Easily set your preferred font family.
-- **MathJax & Table of Contents**: Out-of-the-box support for math and long-form content.
-- **Mermaid Diagram Support**: Easily embed flowcharts, sequence diagrams, and more using Mermaid syntax.
-- **SVG Icon System**: Modern, scalable icons for social and UI elements.
-- **Thumbnail Support**: Show thumbnails on lists or posts as you like.
-- **Recent Posts, Categories, Tags, Social, Languages Widgets**: All configurable and translatable.
-- **Wide Browser Compatibility**: Works on all modern browsers and many legacy ones.
-- **Back to Top Button**: Built-in floating button for quickly returning to the top of the page.
-- **Related Posts**: Automatic related articles section on each post page, with full i18n support.
-- **Beautiful Social Sharing**: Share to Twitter, Facebook, LinkedIn, Telegram, Email, Weibo, and more with colorful SVG icons.
-- **Fast, Simple, and GPLv2 Licensed**: Open source and easy to use.
+[![Hugo](https://img.shields.io/badge/Hugo-0.80+-blue.svg)](https://gohugo.io)
+[![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](LICENSE.md)
+[![GitHub stars](https://img.shields.io/github/stars/chensoul/rose-hugo.svg)](https://github.com/chensoul/rose-hugo/stargazers)
 
-For full documentation and advanced configuration, see the [GitHub repo](https://github.com/chensoul/rose-hugo).
+[Demo](https://rose-hugo-demo.netlify.app) • [Documentation](https://github.com/chensoul/rose-hugo/wiki) • [Issues](https://github.com/chensoul/rose-hugo/issues)
 
-## Installation
+</div>
 
-*Before starting, please be sure that you have
-[installed Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and
-[created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). After that, you are ready
-to install **rose-hugo**.*
+## ✨ Overview
 
-From your project's root directory, run:
+Rose Hugo is a clean, responsive Hugo theme inspired by MH Magazine lite. Perfect for personal blogs, tech sites, and content-driven websites that prioritize readability and user experience.
 
-```
-git clone https://github.com/chensoul/rose-hugo.git themes/rose-hugo
-```
+### 🎯 Core Features
 
-Or, if you don't plan to make any significant changes but want to track and update the theme, you can add it as a git
-submodule via the following command:
+| Feature | Description |
+|---------|-------------|
+| 📱 **Responsive Design** | Optimized for all devices and screen sizes |
+| 🌍 **Multilingual** | 15+ languages built-in, easily extensible |
+| 🎨 **Customizable** | Flexible layouts, colors, and typography |
+| ⚡ **Performance** | Fast loading with modern web standards |
+| 🔍 **SEO Ready** | Built-in Open Graph, Schema, Twitter Cards |
 
-```
-git submodule add https://github.com/chensoul/rose-hugo.git themes/rose-hugo
-```
+### 🛠️ Advanced Features
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `rose-hugo`:
+<details>
+<summary>Click to expand full feature list</summary>
 
-```
-theme = "rose-hugo"
-```
+#### Layout & Navigation
+- Flexible main and secondary menus
+- Configurable sidebar with widget support
+- Multiple layout options (left/right/no sidebar)
+- Responsive navigation with mobile menu
 
-## Configuration
+#### Content Features
+- MathJax support for mathematical expressions
+- Mermaid diagrams for flowcharts and visualizations
+- Table of contents generation
+- Related posts with i18n support
+- Thumbnail support for posts and lists
 
-### Config.toml example
+#### Widgets & Integrations
+- Search functionality
+- Recent posts, categories, tags widgets
+- Social media integration
+- Language switcher
+- Custom widget support
+
+#### SEO & Analytics
+- Open Graph meta tags
+- Twitter Cards
+- Schema.org structured data
+- Google Analytics integration
+- Disqus comments support
+
+#### Customization
+- Custom Google Fonts
+- Configurable color schemes
+- Post meta customization
+- Author box and social sharing
+- Back to top button
+
+</details>
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- [Hugo](https://gohugo.io/getting-started/installing/) v0.80.0 or higher
+- Git
+
+### Installation
+
+1. **Create a new Hugo site** (skip if you already have one):
+   ```bash
+   hugo new site my-blog
+   cd my-blog
+   ```
+
+2. **Install the theme**:
+
+   **Option A: Git Clone** (for customization)
+   ```bash
+   git clone https://github.com/chensoul/rose-hugo.git themes/rose-hugo
+   ```
+
+   **Option B: Git Submodule** (recommended for updates)
+   ```bash
+   git submodule add https://github.com/chensoul/rose-hugo.git themes/rose-hugo
+   ```
+
+3. **Configure your site**:
+   ```bash
+   echo 'theme = "rose-hugo"' >> config.toml
+   ```
+
+4. **Start the development server**:
+   ```bash
+   hugo server -D
+   ```
+
+Your site will be available at `http://localhost:1313`
+
+## ⚙️ Configuration
+
+### Basic Configuration
+
+Create or update your `config.toml` with these essential settings:
 
 ```toml
-baseurl = "/"
-title = "rose-hugo"
-defaultContentLanguage = "en-us"
+baseURL = "https://yoursite.com"
+title = "Your Site Title"
+theme = "rose-hugo"
+defaultContentLanguage = "en"
+
+[params]
+  author = "Your Name"
+  description = "Your site description"
+  avatar = "/images/avatar.jpg"
+
+  # Enable features
+  opengraph = true
+  schema = true
+  twitter_cards = true
+
+[params.sidebar]
+  home = "right"
+  widgets = ["search", "recent", "categories", "taglist"]
+```
+
+### Menu Configuration
+
+```toml
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 3
+```
+
+<details>
+<summary>📋 Complete Configuration Example</summary>
+
+```toml
+baseURL = "https://yoursite.com"
+title = "Your Site Title"
+defaultContentLanguage = "en"
 theme = "rose-hugo"
 
 summaryLength = 6
@@ -69,171 +167,149 @@ ignoreLogs = ['warning-goldmark-raw-html']
   pagerSize = 10
 
 [permalinks]
-  posts="/posts/:year/:month/:day/:slug/"
-  categories="/categories/:slug/"
-  tags="/tags/:slug/"
-  pages="/:slug/"
+  posts = "/posts/:year/:month/:day/:slug/"
+  categories = "/categories/:slug/"
+  tags = "/tags/:slug/"
 
-[menu]
-  [[menu.main]]
-    name = "首页"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "分类"
-    url = "/categories/"
-    weight = 2
-  [[menu.main]]
-    name = "标签"
-    url = "/tags/"
-    weight = 3
-  [[menu.main]]
-    name = "关于"
-    url = "/about/"
-    weight = 4
-  [[menu.main]]
-    name = "RSS"
-    url = "/index.xml"
-    weight = 5
+[params]
+  author = "Your Name"
+  avatar = "/images/avatar.jpg"
+  subtitle = "Your site subtitle"
+  description = "Your site description"
 
-  [[menu.blogroll]]
-    name = "Rose Hugo"
-    url = "https://github.com/rose-hugo"
-    weight = 1
-    
-[Params]
-  author = "rose-hugo"
-  avatar = "/image/favicon.webp"
-  #logo = "/image/logo.webp" # Logo image
-  subtitle = "Just another blog" # Logo subtitle
-  description = "Rose Hugo's Personal blog about everything" # Description of your site
-  opengraph = true # Enable OpenGraph if true
-  schema = true # Enable Schema
-  twitter_cards = true # Enable Twitter Cards if true
-  readmore = true # Show "Read more" button in list if true
-  authorbox = true # Show authorbox at bottom of pages if true
-  toc = false # Enable Table of Contents
-  pagination = true # Show pagination navigation (prev/next links) at the bottom of pages if true
-  post_meta = [ "date", "categories"] # Order of post meta information
-  mainSections = ["posts"] # Specify section pages to show on home page and the "Recent articles" widget
-  dateformat = "2006-01-02" # Change the format of dates
-  mathjax = true # Enable MathJax
-  mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.9/MathJax.min.js" # Specify MathJax path
-  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-  # customHeader = ""
-  # customFooter = ""
-  # customSidebar = ""
+  # SEO & Social
+  opengraph = true
+  schema = true
+  twitter_cards = true
 
-[Params.style]
-  highlightColor = "#e22d30" # Override highlight color
+  # Content
+  readmore = true
+  authorbox = true
+  toc = true
+  pagination = true
+  post_meta = ["date", "categories", "tags"]
+  mainSections = ["posts"]
+  dateformat = "2006-01-02"
 
-  # Override font-family sets
-  # googleFontsLink = "https://fonts.loli.net/css?family=Open+Sans:400,400i,700" # Load Google Fonts
-  # Take care of different quotes OR escaping symbols in these params if necessary
-  fontFamilyPrimary = '"Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif'
-  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
-  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+  # Math & Diagrams
+  mathjax = true
+  mathjaxPath = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
-[Params.sidebar]
-  home = "right"   # Configure layout for home page
-  list = "right"   # Configure layout for list pages
-  single = "right" # Configure layout for single pages
-  # Enable widgets in given order：["search", "recent", "categories", "taglist", "social", "languages"]
-  widgets = [ "search", "recent", "categories", "taglist"]
+[params.style]
+  highlightColor = "#e22d30"
+  fontFamilyPrimary = '"Open Sans", sans-serif'
+  fontFamilySecondary = '"Fira Code", monospace'
 
-[Params.widgets]
-  recent_num = 10 # Set the number of articles in the "Recent articles" widget
-  categories_counter = true # Enable counter for each category in "Categories" widget
-  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+[params.sidebar]
+  home = "right"
+  list = "right"
+  single = "right"
+  widgets = ["search", "recent", "categories", "taglist", "social"]
 
-[Params.thumbnail]
-  # Control thumbnail visibility, eg: list、post
-  visibility = ["list"]
+[params.widgets]
+  recent_num = 5
+  categories_counter = true
+  tags_counter = true
 
-[Params.widgets.social]
-  cached = false # activate cache if true
-  # Enable parts of social widget
-  facebook = "username"
-  twitter = "username"
-  instagram = "username"
-  linkedin = "username"
-  telegram = "username"
-  github = "username"
-  gitlab = "username"
-  bitbucket = "username"
-  email = "username@gmail.com"
-  youtube = "username"
-  
-# Custom social links
-[[Params.widgets.social.custom]]
-  title = "Youtube"
-  url = "https://youtube.com/user/username"
-  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
-  rel = "noopener noreferrer" # Set to false to remove the rel attribute
-
-[[Params.widgets.social.custom]]
-  title = "My Home Page"
-  url = "https://example.com"
-
-[Params.widgets.search]
-  cached = false # activate cache if true
-  url = "https://google.com/search"
-  [Params.widgets.search.input]
-    name = "sitesearch"
-    pre = ""
-    
-[Params.remark42]
-  enabled = true
-  host = "https://remark42.example.com"
-  site = "remark42"
-  locale = "zh"
+[params.widgets.social]
+  github = "yourusername"
+  twitter = "yourusername"
+  email = "your@email.com"
 ```
 
-**Do not copy example config as-is**. Use only those parameters that you need.
+</details>
 
-For more information about all available standard configuration settings, please read
-[All Hugo Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings).
+> 💡 **Tip**: Start with the basic configuration and gradually add features as needed. See the [full documentation](https://github.com/chensoul/rose-hugo/wiki) for all available options.
 
-### Front Matter example
+## 📝 Content Creation
+
+### Front Matter
+
+Add this to the top of your content files:
 
 ```yaml
 ---
-# Common-Defined params
-title: "Example article title"
-date: "2017-08-21"
-description: "Example article description"
-categories:
-  - "Category 1"
-  - "Category 2"
-tags:
-  - "Test"
-  - "Another test"
-
-# Theme-Defined params
-thumbnail: "image/placeholder.png" # Thumbnail image
-lead: "Example lead - highlighted near the title" # Lead text
-comments: false # Enable Disqus comments for specific page
-authorbox: true # Enable authorbox for specific page
-pagination: true # Enable pagination navigation (prev/next) for specific page
-toc: true # Enable Table of Contents for specific page
-mathjax: true # Enable MathJax for specific page
-sidebar: "right" # Enable sidebar (on the right side) per page
-widgets: # Enable sidebar widgets in given order per page
-  - "search"
-  - "recent"
-  - "taglist"
+title: "Your Post Title"
+date: 2024-01-15
+description: "Brief description of your post"
+categories: ["Technology"]
+tags: ["Hugo", "Web Development"]
+thumbnail: "/images/post-thumbnail.jpg"
+toc: true
 ---
 ```
 
-For more information about all available standard front matter variables, please read
-[Hugo Front Matter](https://gohugo.io/content-management/front-matter).
+### Available Front Matter Options
 
-## Contributing
+| Option | Type | Description |
+|--------|------|-------------|
+| `thumbnail` | string | Post thumbnail image path |
+| `lead` | string | Highlighted text below title |
+| `toc` | boolean | Enable table of contents |
+| `mathjax` | boolean | Enable math expressions |
+| `authorbox` | boolean | Show author information |
+| `comments` | boolean | Enable comments |
+| `sidebar` | string | Sidebar position (`left`, `right`, `none`) |
 
-Have you found a bug or got an idea for a new feature? Feel free to use the
-[issue tracker](https://github.com/chensoul/rose-hugo/issues) to let me know. Or make directly a
-[pull request](https://github.com/chensoul/rose-hugo/pulls), but please respect the following
+## 🎨 Customization
 
-## License
+### Color Scheme
 
-This theme is released under the [GPLv2 license](https://github.com/chensoul/rose-hugo/blob/master/LICENSE.md).
+Customize your theme colors in `config.toml`:
+
+```toml
+[params.style]
+  highlightColor = "#your-color"  # Primary accent color
+```
+
+### Typography
+
+```toml
+[params.style]
+  fontFamilyPrimary = '"Your Font", sans-serif'
+  fontFamilySecondary = '"Your Mono Font", monospace'
+```
+
+### Widgets
+
+Enable and configure sidebar widgets:
+
+```toml
+[params.sidebar]
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[params.widgets]
+  recent_num = 5
+  categories_counter = true
+  tags_counter = true
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Report Issues**: Found a bug? [Open an issue](https://github.com/chensoul/rose-hugo/issues)
+2. **Feature Requests**: Have an idea? [Start a discussion](https://github.com/chensoul/rose-hugo/discussions)
+3. **Pull Requests**: Ready to contribute code? [Submit a PR](https://github.com/chensoul/rose-hugo/pulls)
+
+### Development Setup
+
+```bash
+git clone https://github.com/chensoul/rose-hugo.git
+cd rose-hugo
+hugo server --source=exampleSite --themesDir=../..
+```
+
+## 📄 License
+
+This theme is released under the [GPL v2 License](LICENSE.md).
+
+---
+
+<div align="center">
+
+**[⭐ Star this repo](https://github.com/chensoul/rose-hugo)** • **[🐛 Report Bug](https://github.com/chensoul/rose-hugo/issues)** • **[💡 Request Feature](https://github.com/chensoul/rose-hugo/discussions)**
+
+Made with ❤️ by [chensoul](https://github.com/chensoul)
+
+</div>
