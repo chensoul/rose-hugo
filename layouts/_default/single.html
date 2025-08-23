@@ -12,7 +12,6 @@
 		</header>
 		{{ partial "post_thumbnail.html" (dict "class" "post" "page" .) }}
 		{{- partial "post_toc.html" . -}}
-		{{ partial "share.html" . }}
 		<div class="content post__content clearfix">
 			{{ .Content }}
 		</div>
@@ -23,7 +22,6 @@
 				{{ partial "post_tags.html" . }}
 			</footer>
 			{{- end }}
-			{{ partial "share.html" . }}
 		</footer>
 	</article>
 </main>
