@@ -65,7 +65,7 @@
 - id: footer_credits
   translation:
     "Generoitu <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> och \
-    <a href=\"https://github.com/chensoul/hugo-rose/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> teemalla."
+    <a href=\"https://github.com/chensoul/rose-hugo/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> teemalla."
 
 # 404
 - id: 404_title

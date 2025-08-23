@@ -67,7 +67,7 @@
 - id: footer_credits
   translation:
     "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
-    <a href=\"https://github.com/chensoul/hugo-rose/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> theme."
+    <a href=\"https://github.com/chensoul/rose-hugo/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> theme."
 
 - id: related_post
   translation: "Related Posts"

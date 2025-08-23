@@ -1,4 +1,4 @@
-# Hugo Rose
+# Rose Hugo
 
 **Hugo Rose** is a responsive, clean, and content-focused Hugo theme inspired by the MH Magazine lite WordPress theme. It is designed for personal blogs, tech sites, and content-driven websites that value readability and flexibility.
 
@@ -24,32 +24,32 @@
 - **Beautiful Social Sharing**: Share to Twitter, Facebook, LinkedIn, Telegram, Email, Weibo, and more with colorful SVG icons.
 - **Fast, Simple, and GPLv2 Licensed**: Open source and easy to use.
 
-For full documentation and advanced configuration, see the [GitHub repo](https://github.com/chensoul/hugo-rose).
+For full documentation and advanced configuration, see the [GitHub repo](https://github.com/chensoul/rose-hugo).
 
 ## Installation
 
 *Before starting, please be sure that you have
 [installed Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and
 [created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). After that, you are ready
-to install **hugo-rose**.*
+to install **rose-hugo**.*
 
 From your project's root directory, run:
 
 ```
-git clone https://github.com/chensoul/hugo-rose.git themes/hugo-rose
+git clone https://github.com/chensoul/rose-hugo.git themes/rose-hugo
 ```
 
 Or, if you don't plan to make any significant changes but want to track and update the theme, you can add it as a git
 submodule via the following command:
 
 ```
-git submodule add https://github.com/chensoul/hugo-rose.git themes/hugo-rose
+git submodule add https://github.com/chensoul/rose-hugo.git themes/rose-hugo
 ```
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `hugo-rose`:
+Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `rose-hugo`:
 
 ```
-theme = "hugo-rose"
+theme = "rose-hugo"
 ```
 
 ## Configuration
@@ -58,9 +58,9 @@ theme = "hugo-rose"
 
 ```toml
 baseurl = "/"
-title = "hugo-rose"
+title = "rose-hugo"
 defaultContentLanguage = "en-us"
-theme = "hugo-rose"
+theme = "rose-hugo"
 
 summaryLength = 6
 ignoreLogs = ['warning-goldmark-raw-html']
@@ -98,11 +98,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
   [[menu.blogroll]]
     name = "Hugo Rose"
-    url = "https://github.com/hugo-rose"
+    url = "https://github.com/rose-hugo"
     weight = 1
     
 [Params]
-  author = "hugo-rose"
+  author = "rose-hugo"
   avatar = "/image/favicon.webp"
   #logo = "/image/logo.webp" # Logo image
   subtitle = "Just another blog" # Logo subtitle
@@ -231,9 +231,9 @@ For more information about all available standard front matter variables, please
 ## Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the
-[issue tracker](https://github.com/chensoul/hugo-rose/issues) to let me know. Or make directly a
-[pull request](https://github.com/chensoul/hugo-rose/pulls), but please respect the following
+[issue tracker](https://github.com/chensoul/rose-hugo/issues) to let me know. Or make directly a
+[pull request](https://github.com/chensoul/rose-hugo/pulls), but please respect the following
 
 ## License
 
-This theme is released under the [GPLv2 license](https://github.com/chensoul/hugo-rose/blob/master/LICENSE.md).
+This theme is released under the [GPLv2 license](https://github.com/chensoul/rose-hugo/blob/master/LICENSE.md).

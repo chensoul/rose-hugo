@@ -1,7 +1,7 @@
 baseurl = "/"
 title = "Hugo Rose"
 defaultContentLanguage = 'zh-cn'
-theme = "hugo-rose"
+theme = "rose-hugo"
 
 summaryLength = 6
 ignoreLogs = ['warning-goldmark-raw-html']
@@ -38,11 +38,11 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
   [[menu.blogroll]]
     name = "Hugo Rose"
-    url = "https://github.com/hugo-rose"
+    url = "https://github.com/rose-hugo"
     weight = 1
 
 [Params]
-  author = "hugo-rose"
+  author = "rose-hugo"
   avatar = "/image/avatar.png"
   #logo = "/image/logo.webp" # Logo image
   subtitle = "Just another blog" # Logo subtitle

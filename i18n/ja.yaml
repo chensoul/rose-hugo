@@ -67,7 +67,7 @@
 - id: footer_credits
   translation:
     "このサイトは <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> と \
-    <a href=\"https://github.com/chensoul/hugo-rose/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> \
+    <a href=\"https://github.com/chensoul/rose-hugo/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo Rose</a> \
     テーマで生成されています。"
 
 # 404

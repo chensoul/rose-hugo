@@ -1,5 +1,5 @@
 {
-  "name": "hugo-rose",
+  "name": "rose-hugo",
   "version": "1.0.0",
   "description": "Responsive, simple, clean and content-focused Hugo theme based on the MH Magazine lite WordPress theme",
   "license": "GPL-2.0",
@@ -27,10 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chensoul/hugo-rose.git"
+    "url": "git+https://github.com/chensoul/rose-hugo.git"
   },
   "bugs": {
-    "url": "https://github.com/chensoul/hugo-rose/issues"
+    "url": "https://github.com/chensoul/rose-hugo/issues"
   },
-  "homepage": "https://github.com/chensoul/hugo-rose"
+  "homepage": "https://github.com/chensoul/rose-hugo"
 }
