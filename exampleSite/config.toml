@@ -35,8 +35,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [Params]
   author = "Your Name"
-  avatar = "/image/avatar.jpg"
-  logo = "/image/logo.svg" # Logo image
+  avatar = "/avatar.jpg"
+  logo = "/logo.svg" # Logo image
   subtitle = "Just another hugo theme" # Logo subtitle
   description = "A Personal blog about everything" # Description of your site
   authorbox = true # Show authorbox at bottom of pages if true

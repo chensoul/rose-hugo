@@ -810,7 +810,28 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .toc__menu {
+	max-height: 500px;
+	overflow-y: auto;
 	padding: 4px 0;
+}
+
+.toc__menu::-webkit-scrollbar {
+	width: 6px;
+}
+
+.toc__menu::-webkit-scrollbar-track {
+	background: #f8f9fa;
+	border-radius: 3px;
+}
+
+.toc__menu::-webkit-scrollbar-thumb {
+	background: #dee2e6;
+	border-radius: 3px;
+	transition: background 0.2s ease;
+}
+
+.toc__menu::-webkit-scrollbar-thumb:hover {
+	background: #adb5bd;
 }
 
 .toc__menu ul {
