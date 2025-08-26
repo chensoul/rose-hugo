@@ -1,7 +1,6 @@
 {{- $root := . -}}
-{{- with .Param "post_meta" -}}
-	{{- range $field := . -}}
-		{{- $p := printf "post_meta/%s.html" $field -}}
-		{{- partial $p $root -}}
-	{{- end -}}
+{{- $post_meta := .Param "post_meta" | default (slice "date" "categories" "author") -}}
+{{- range $field := $post_meta -}}
+	{{- $p := printf "post_meta/%s.html" $field -}}
+	{{- partial $p $root -}}
 {{- end -}}
