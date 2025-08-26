@@ -160,7 +160,7 @@ title = "Your Site Title"
 defaultContentLanguage = "en"
 theme = "rose-hugo"
 
-summaryLength = 6
+summaryLength = 3
 ignoreLogs = ['warning-goldmark-raw-html']
 
 [pagination]
@@ -174,14 +174,12 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [params]
   author = "Your Name"
   avatar = "/images/avatar.jpg"
-  subtitle = "Your site subtitle"
-  description = "Your site description"
-
-  # SEO & Social
-  opengraph = true
-  schema = true
-  twitter_cards = true
-
+  logo = "/image/logo.svg" # Logo image
+  subtitle = "Just another hugo theme" # Logo subtitle
+  description = "A Personal blog about everything" # Description of your site
+  authorbox = true # Show authorbox at bottom of pages if true
+  authorIntro = "A developer from China Wuhan, mostly writing about software development and open-source. <br> Browse my [blog posts](/posts), subscribe to my [RSS feed](/index.xml), or learn more [about me](/about/)."
+  
   # Content
   authorbox = true
   toc = true
@@ -191,7 +189,10 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
   # Math & Diagrams
   mathjax = true
-  mathjaxPath = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.9/MathJax.min.js"
+  
+  mermaid="https://cdn.jsdmirror.com/npm/mermaid@11.8.0/dist/mermaid.min.js"
 
 [params.style]
   highlightColor = "#e22d30"
@@ -200,14 +201,20 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [params.sidebar]
   home = "right"
-  list = "right"
-  single = "right"
   widgets = ["search", "recent", "categories", "taglist", "social"]
 
 [params.widgets.social]
-  github = "yourusername"
-  twitter = "yourusername"
-  email = "your@email.com"
+  cached = false # activate cache if true
+  facebook = "username"
+  twitter = "username"
+  instagram = "username"
+  linkedin = "username"
+  telegram = "username"
+  github = "username"
+  gitlab = "username"
+  bitbucket = "username"
+  email = "username@gmail.com"
+  youtube = "username"
 ```
 
 </details>
@@ -269,7 +276,7 @@ Enable and configure sidebar widgets:
 
 ```toml
 [params.sidebar]
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "recent", "categories", "taglist", "languages"]
 ```
 
 ## 🤝 Contributing
