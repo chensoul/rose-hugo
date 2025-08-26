@@ -408,7 +408,13 @@ select {
 }
 
 .logo__img {
-	max-height: 256px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid white;
+	margin-right: 0.75rem;
+	flex-shrink: 0;
 }
 
 .logo__text {
@@ -420,8 +426,8 @@ select {
 }
 
 .logo--mixed .logo__img {
-	max-width: 128px;
-	max-height: 128px;
+	max-width: 80px;
+	max-height: 80px;
 }
 
 .logo--mixed .logo__text {
@@ -645,15 +651,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	margin-top: .625rem;
 	border-top: 1px dotted #ebebeb;
 	border-bottom: 1px dotted #ebebeb;
-}
-
-.post__lead {
-	margin-top: 4px;
-	margin-top: .25rem;
-	margin-bottom: 0;
-	font-size: 16px;
-	font-size: 1rem;
-	font-style: italic;
 }
 
 .post__thumbnail {

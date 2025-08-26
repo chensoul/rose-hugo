@@ -7,9 +7,6 @@
 - id: menu_label
   translation: "Menú"
 
-- id: blogroll_title
-  translation: "Menú"
-
 # Post meta
 - id: meta_lastmod
   translation: "Última modificación"

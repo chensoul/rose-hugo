@@ -5,9 +5,6 @@
 - id: menu_label
   translation: "মেনু"
 
-- id: blogroll_title
-  translation: "মেনু"
-
 # Post meta
 - id: meta_lastmod
   translation: "সর্বশেষ পরিবর্তন"

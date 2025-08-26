@@ -183,10 +183,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
   twitter_cards = true
 
   # Content
-  readmore = true
   authorbox = true
   toc = true
-  pagination = true
   post_meta = ["date", "categories", "tags"]
   mainSections = ["posts"]
   dateformat = "2006-01-02"
@@ -205,11 +203,6 @@ ignoreLogs = ['warning-goldmark-raw-html']
   list = "right"
   single = "right"
   widgets = ["search", "recent", "categories", "taglist", "social"]
-
-[params.widgets]
-  recent_num = 5
-  categories_counter = true
-  tags_counter = true
 
 [params.widgets.social]
   github = "yourusername"
@@ -277,11 +270,6 @@ Enable and configure sidebar widgets:
 ```toml
 [params.sidebar]
   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
-
-[params.widgets]
-  recent_num = 5
-  categories_counter = true
-  tags_counter = true
 ```
 
 ## 🤝 Contributing

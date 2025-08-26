@@ -5,9 +5,6 @@
 - id: menu_label
   translation: "Meny"
 
-- id: blogroll_title
-  translation: "Meny"
-
 # Post meta
 - id: meta_lastmod
   translation: "Senast ändrad"

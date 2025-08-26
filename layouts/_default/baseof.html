@@ -6,30 +6,21 @@
 	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Params.subtitle }}{{ end }}</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
-	{{- if .Site.Params.opengraph }}
-		<meta property="og:title" content="{{ .Title | default .Site.Title }}">
-		<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-		<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-		<meta property="og:url" content="{{ .Permalink }}">
-		<meta property="og:site_name" content="{{ .Site.Title }}">
-		<meta property="og:image" content="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Site.Params.ogImage }}{{ end }}">
-	{{- end }}
-	{{- if .Site.Params.schema }}
-		{{ template "_internal/schema.html" . }}
-	{{- end }}
-	{{- if .Site.Params.twitter_cards }}
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
-		<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-		<meta name="twitter:image" content="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Site.Params.ogImage }}{{ end }}">
-	{{- end }}
+	<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+	<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+	<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:site_name" content="{{ .Site.Title }}">
+	<meta property="og:image" content="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Site.Params.ogImage }}{{ end }}">
+	{{ template "_internal/schema.html" . }}
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+	<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+	<meta name="twitter:image" content="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Site.Params.ogImage }}{{ end }}">
 
-	{{- $googleFontsLink := .Site.Params.style.googleFontsLink | default "https://fonts.loli.net/css?family=Open+Sans:400,400i,700" }}
-	{{- if hasPrefix $googleFontsLink "https://fonts.loli.net/" }}
 	<link rel="preconnect" href="//fonts.loli.net" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.loli.net">
-	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
-	{{- end }}
+	<link rel="stylesheet" href="https://fonts.loli.net/css?family=Open+Sans:400,400i,700">
 
 	<link rel="stylesheet" href="/css/style.min.css">
 
@@ -47,10 +38,6 @@
 	{{- if not $server }}
 		{{ template "_internal/google_analytics.html" . }}
 	{{- end }}
-
-	{{ with .Site.Params.customHeader }}
-		{{ . | safeHTML }}
-	{{ end }}
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -95,9 +82,5 @@
 			}
 		}(document, window));
 	</script>
-
-	{{ with .Site.Params.customFooter }}
-	{{ . | safeHTML }}
-	{{ end }}
 </body>
 </html>

@@ -1,8 +1,10 @@
 ---
 title: About
+description: "about me"
 date: 2025-07-07
+slug: /about/
 authorbox: false
-sidebar: false
+pagination: false
 ---
 
 This site is built with [Hugo](https://gohugo.io/) and the [Rose Hugo](https://github.com/chensoul/rose-hugo) theme.
@@ -13,7 +15,7 @@ This site is built with [Hugo](https://gohugo.io/) and the [Rose Hugo](https://g
 
 - **Responsive Design**: Looks great on all devices.
 - **Main & Secondary Menus**: Flexible navigation for your content.
-- **Widgetized Sidebar**: Sidebar supports widgets such as search, recent posts, categories, tags, social links, blogroll and languages.
+- **Widgetized Sidebar**: Sidebar supports widgets such as search, recent posts, categories, tags, social links and languages.
 - **Multilingual Support**: 15+ languages built-in, easy to extend.
 - **Configurable Theme Settings**: Control sidebar position, author box, post navigation, highlight color, and more via `config.toml`.
 - **Customizable Widgets**: Enable/disable and reorder sidebar widgets per page or globally.

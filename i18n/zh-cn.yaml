@@ -7,9 +7,6 @@
 - id: menu_label
   translation: "菜单"
 
-- id: blogroll_title
-  translation: "链接"
-
 # Post meta
 - id: meta_lastmod
   translation: "最后修改"

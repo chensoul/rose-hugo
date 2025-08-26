@@ -36,54 +36,36 @@ ignoreLogs = ['warning-goldmark-raw-html']
     url = "/index.xml"
     weight = 5
 
-  [[menu.blogroll]]
-    name = "Rose Hugo"
-    url = "https://github.com/rose-hugo"
-    weight = 1
-
 [Params]
-  author = "rose-hugo"
-  avatar = "/image/avatar.png"
-  #logo = "/image/logo.webp" # Logo image
+  author = "rose"
+  avatar = "/image/avatar.jpg"
+  logo = "/image/logo.svg" # Logo image
   subtitle = "Just another blog" # Logo subtitle
   description = "A Personal blog about everything" # Description of your site
-  opengraph = true # Enable OpenGraph if true
-  schema = true # Enable Schema
-  twitter_cards = true # Enable Twitter Cards if true
-  readmore = true # Show "Read more" button in list if true
   authorbox = true # Show authorbox at bottom of pages if true
+  authorIntro = "A developer from China Wuhan, mostly writing about software development and open-source. <br> Browse my [blog posts](/posts), subscribe to my [RSS feed](/index.xml), or learn more [about me](/about/)."
   toc = false # Enable Table of Contents
-  #pagination = true # Show pagination navigation (prev/next links) at the bottom of pages if true
-  post_meta = [ "date", "categories", "translations"] # Order of post meta information
+  post_meta = [ "date", "categories", "author", "translations"] # Order of post meta information
   mainSections = ["posts"] # Specify section pages to show on home page and the "Recent articles" widget
   dateformat = "2006-01-02" # Change the format of dates
   mathjax = false # Enable MathJax
   mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.9/MathJax.min.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
   mermaid="https://cdn.jsdmirror.com/npm/mermaid@11.8.0/dist/mermaid.min.js"
-  # customHeader = ""
-  # customFooter = ""
-  # customSidebar = ""
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
-  # Enable widgets in given order: "search", "recent", "categories", "taglist", "languages", "blogroll"
+  # Enable widgets in given order: "search", "recent", "categories", "taglist", "languages"
   widgets = ["search", "social", "recent", "categories", "taglist"]
 
 [Params.thumbnail]
   # Control thumbnail visibility, eg: list、post
   visibility = ["list"]
 
-[Params.widgets]
-  recent_num = 10 # Set the number of articles in the "Recent articles" widget
-  categories_counter = true # Enable counter for each category in "Categories" widget
-  tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
-
 [Params.widgets.social]
   cached = false # activate cache if true
-  # Enable parts of social widget
   facebook = "username"
   twitter = "username"
   instagram = "username"
@@ -96,11 +78,6 @@ ignoreLogs = ['warning-goldmark-raw-html']
   youtube = "username"
 
 [Params.style]
-  highlightColor = "#e22d30" # Override highlight color
-
-  # Override font-family sets
-  # googleFontsLink = "https://fonts.loli.net/css?family=Open+Sans:400,400i,700" # Load Google Fonts
-  # Take care of different quotes OR escaping symbols in these params if necessary
+  highlightColor = "#e22d30"
   fontFamilyPrimary = '"Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif'
-  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
   fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"

@@ -15,7 +15,7 @@
 		<span class="authorbox__name">{{ T "authorbox_name" (dict "Name" .) }}</span>
 	</div>
 	{{- end }}
-	{{- with .Site.Params.subtitle }}
+	{{- with .Site.Params.authorIntro }}
 	<div class="authorbox__description">
 		{{ . | markdownify }}
 	</div>

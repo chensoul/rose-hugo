@@ -5,9 +5,6 @@
 - id: menu_label
   translation: "Valikko"
 
-- id: blogroll_title
-  translation: "Valikko"
-
 # Post meta
 - id: meta_lastmod
   translation: "Viimeksi muutettu"

@@ -5,9 +5,6 @@
 - id: menu_label
   translation: "Мәзір"
 
-- id: blogroll_title
-  translation: "Мәзір"
-
 # Post meta
 - id: meta_lastmod
   translation: "Соңғы өзгеріс"
