@@ -37,16 +37,5 @@
 {{ end }}
 
 {{ define "sidebar" }}
-{{- if .Param "toc" }}
-{{- if gt (len .TableOfContents) 32 }}
-<aside class="sidebar sidebar--right">
-	<div class="post__toc toc">
-		<div class="toc__title">{{ T "toc_title" }}</div>
-		<div class="toc__menu">
-			{{ .TableOfContents }}
-		</div>
-	</div>
-</aside>
-{{- end }}
-{{- end }}
+{{ partial "post_toc.html" . }}
 {{ end }}
