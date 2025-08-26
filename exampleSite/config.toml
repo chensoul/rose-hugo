@@ -35,7 +35,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [Params]
   author = "Your Name"
-    avatar = "/images/avatar.jpg"
+    avatar = "/image/avatar.jpg"
     logo = "/image/logo.svg" # Logo image
     subtitle = "Just another hugo theme" # Logo subtitle
     description = "A Personal blog about everything" # Description of your site
@@ -44,21 +44,21 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
     # Content
     toc = true
-    post_meta = ["date", "categories", "tags"]
+    post_meta = ["date", "categories", "author"]
     mainSections = ["posts"]
     dateformat = "2006-01-02"
 
     # Math & Diagrams
     mathjax = true
     mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-    mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.9/MathJax.min.js"
+    mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.6/MathJax.min.js"
 
     mermaid="https://cdn.jsdmirror.com/npm/mermaid@11.8.0/dist/mermaid.min.js"
 
 [Params.sidebar]
   home = "right" # Position of sidebar on home page: "left", "right", "none"
   # Enable widgets in given order: "search", "recent", "categories", "taglist", "languages"
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["recent", "categories", "taglist"]
 
 [Params.thumbnail]
   # Control thumbnail visibility, eg: list、post

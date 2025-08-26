@@ -1,24 +1,9 @@
-{
-{
-	-$ highlightColor: = . Site . Params . style . highlightColor | default "#e22d30" -}
-}
+{{- $highlightColor := .Site.Params.style.highlightColor | default "#e22d30" -}}
 
-{
-{
-	-$ fontSans: = ` "Open Sans", Helvetica, Arial, sans-serif ` -}
-}
-{
-{
-	-$ fontMono: = ` SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ` -}
-}
-{
-{
-	-$ fontFamilyPrimary: = . Site . Params . style . fontFamilyPrimary | default $ fontSans -}
-}
-{
-{
-	-$ fontFamilySecondary: = . Site . Params . style . fontFamilySecondary | default $ fontMono -}
-}
+{{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}}
+{{- $fontMono := `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` -}}
+{{- $fontFamilyPrimary := .Site.Params.style.fontFamilyPrimary | default $fontSans -}}
+{{- $fontFamilySecondary := .Site.Params.style.fontFamilySecondary | default $fontMono -}}
 
 *,
 *::before,
@@ -66,11 +51,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: {
-{
-	$ fontFamilyPrimary
-}
-};
+	font-family: {{ $fontFamilyPrimary }};
 	font-size: 1rem;
 	line-height: 1.6;
 	word-wrap: break-word;
@@ -160,11 +141,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 }
 
 /* Animation */
@@ -223,11 +200,7 @@ a {
 }
 
 a:hover {
-	color: {
-{
-	$ highlightColor
-}
-};
+	color: {{ $highlightColor }};
 }
 
 hr {
@@ -288,11 +261,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: {
-{
-	$ fontFamilySecondary
-}
-};
+	font-family: {{ $fontFamilySecondary }};
 	font-size: inherit;
 }
 
@@ -343,11 +312,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid {
-{
-	$ highlightColor
-}
-};
+	border-left: 5px solid {{ $highlightColor }};
 }
 
 blockquote p:last-child {
@@ -485,22 +450,14 @@ select {
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
-	color: {
-{
-	$ highlightColor
-}
-};
+	color: {{ $highlightColor }};
 	border-top: 1px solid #ebebeb;
 }
 
 .divider {
 	height: 5px;
 	margin: 0;
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 	border: 0;
 }
 
@@ -537,11 +494,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px {
-{
-	$ highlightColor
-}
-};
+	box-shadow: inset 0 0 1px 3px {{ $highlightColor }};
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -554,11 +507,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: {
-{
-	$ highlightColor
-}
-};
+	color: {{ $highlightColor }};
 }
 
 .menu__list {
@@ -567,11 +516,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item:hover {
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 }
 
 .menu__item:first-child {
@@ -579,11 +524,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 }
 
 .menu__link {
@@ -624,11 +565,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid {
-	{
-		$ highlightColor
-	}
-	};
+		border-bottom: 5px solid {{ $highlightColor }};
 	}
 
 	.menu__btn {
@@ -682,11 +619,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: {
-{
-	$ highlightColor
-}
-};
+	color: {{ $highlightColor }};
 }
 
 .meta__item {
@@ -735,11 +668,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .main .pagination a,
 .post-related a {
 	font-weight: 700;
-	color: {
-{
-	$ highlightColor
-}
-};
+	color: {{ $highlightColor }};
 }
 
 .content a:hover,
@@ -829,11 +758,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 }
 
 .tags__link,
@@ -848,11 +773,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 	fill: #fff;
 }
 
@@ -914,11 +835,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: {
-{
-	$ highlightColor
-}
-};
+	color: {{ $highlightColor }};
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -938,15 +855,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .authorbox__avatar {
 	float: left;
 	padding: 3px;
-	margin: 0 15px 0 0;
-}
-
-.avatar {
-	border-radius: 50%;
-	object-fit: cover;
-	border: 1px solid white;
-	margin-right: 0.75rem;
-	flex-shrink: 0;
+	margin: 0 25px 0 0;
+	border: 1px solid #ebebeb;
 }
 
 .authorbox__header {
@@ -1015,11 +925,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .pagination__item a {
-	color: {
-{
-	$ highlightColor
-}
-};
+	color: {{ $highlightColor }};
 }
 
 /* pagination (prev/next links) navigation */
@@ -1069,20 +975,17 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .post-related {
 	padding-bottom: 10px;
 }
-
 .post-related h3 {
 	font-size: 1.18em;
 	margin-bottom: 10px;
 	font-weight: 600;
 	letter-spacing: 0.02em;
 }
-
 .post-related-list {
 	padding-left: 1.2em;
 	margin: 0;
 	display: block;
 }
-
 .post-related-item {
 	background: none;
 	border-radius: 0;
@@ -1094,7 +997,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 /* Images / Video */
 img {
-	width: auto \9; /* ie8 */
+	width: auto\9; /* ie8 */
 	max-width: 100%;
 	height: auto;
 	vertical-align: bottom;
@@ -1173,11 +1076,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 }
 
 textarea {
@@ -1206,11 +1105,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: none;
-	border-bottom: 3px solid {
-{
-	$ highlightColor
-}
-};
+	border-bottom: 3px solid {{ $highlightColor }};
 }
 
 .widget__item {
@@ -1293,49 +1188,17 @@ textarea {
 }
 
 /* 品牌色背景（社交栏和分享栏通用） */
-.social__link[title*="Twitter"] {
-	background: #1da1f2;
-}
-
-.social__link[title*="Facebook"] {
-	background: #1877f3;
-}
-
-.social__link[title*="LinkedIn"] {
-	background: #0077b5;
-}
-
-.social__link[title*="Weibo"] {
-	background: #e6162d;
-}
-
-.social__link[title*="Telegram"] {
-	background: #229ed9;
-}
-
-.social__link[title*="GitHub"] {
-	background: #333;
-}
-
-.social__link[title*="Email"] {
-	background: #888;
-}
-
-.social__link[title*="YouTube"] {
-	background: #ff0000;
-}
-
-.social__link[title*="Instagram"] {
-	background: #e4405f;
-}
-
-.social__link[title*="GitLab"] {
-	background: #fc6d26;
-}
-
-.social__link[title*="Bitbucket"] {
-	background: #205081;
-}
+.social__link[title*="Twitter"]  { background: #1da1f2; }
+.social__link[title*="Facebook"]  { background: #1877f3; }
+.social__link[title*="LinkedIn"]  { background: #0077b5; }
+.social__link[title*="Weibo"]   { background: #e6162d; }
+.social__link[title*="Telegram"] { background: #229ed9; }
+.social__link[title*="GitHub"] { background: #333; }
+.social__link[title*="Email"]   { background: #888; }
+.social__link[title*="YouTube"]  { background: #ff0000; }
+.social__link[title*="Instagram"] { background: #e4405f; }
+.social__link[title*="GitLab"] { background: #fc6d26; }
+.social__link[title*="Bitbucket"] { background: #205081; }
 
 /* Tags Widget */
 .widget-taglist__link {
@@ -1352,11 +1215,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: {
-{
-	$ highlightColor
-}
-};
+	background: {{ $highlightColor }};
 }
 
 .widget-languages__link-btn {
@@ -1500,14 +1359,13 @@ textarea {
 }
 
 @media screen and (max-width: 620px) {
-	body {
+	body{
 		font-size: 0.98em;
 	}
 
-	pre {
+	pre{
 		font-size: 0.88em;
 	}
-
 	input[type=text],
 	input[type=email],
 	input[type=tel],

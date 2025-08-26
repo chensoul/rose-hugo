@@ -2,13 +2,13 @@
 
 <div align="center">
 
-A modern, responsive Hugo theme for content creators
+A modern, responsive Hugo theme port of [Mainroad](https://github.com/Vimux/Mainroad). 
 
 [![Hugo](https://img.shields.io/badge/Hugo-0.80+-blue.svg)](https://gohugo.io)
 [![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](LICENSE.md)
 [![GitHub stars](https://img.shields.io/github/stars/chensoul/rose-hugo.svg)](https://github.com/chensoul/rose-hugo/stargazers)
 
-[Demo](https://rose-hugo-demo.netlify.app) • [Documentation](https://github.com/chensoul/rose-hugo/wiki) • [Issues](https://github.com/chensoul/rose-hugo/issues)
+[Documentation](https://github.com/chensoul/rose-hugo/wiki) • [Issues](https://github.com/chensoul/rose-hugo/issues)
 
 </div>
 
@@ -199,7 +199,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     
     # Content
     toc = true
-    post_meta = ["date", "categories", "tags"]
+    post_meta = ["date", "categories", "author"]
     mainSections = ["posts"]
     dateformat = "2006-01-02"
   
