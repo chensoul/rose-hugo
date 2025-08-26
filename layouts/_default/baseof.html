@@ -31,8 +31,7 @@
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
 
-	{{ $style := resources.Get "css/style.min.css" | resources.ExecuteAsTemplate "css/style.min.css" . -}}
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	<link rel="stylesheet" href="/css/style.min.css">
 
 	{{- with .OutputFormats.Get "rss" }}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}

@@ -3,7 +3,7 @@ title = "Rose Hugo"
 defaultContentLanguage = 'zh-cn'
 theme = "rose-hugo"
 
-summaryLength = 6
+summaryLength = 3
 ignoreLogs = ['warning-goldmark-raw-html']
 
 [services.disqus]
