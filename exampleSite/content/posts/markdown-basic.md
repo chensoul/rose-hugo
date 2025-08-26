@@ -150,7 +150,7 @@ You can also use inline Markdown.
 </html>
 {{< /highlight >}}
 
-## Other stuff — abbr, sub, sup, kbd, etc.
+## Other stuff 
 
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
 
@@ -354,7 +354,7 @@ gitGraph
   commit
 ```
 
-### Bar chart (using gantt chart) 
+### Bar chart
 
 ```
 gantt

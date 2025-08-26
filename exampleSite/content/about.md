@@ -5,6 +5,7 @@ date: 2025-07-07
 slug: /about/
 authorbox: false
 pagination: false
+toc: false
 ---
 
 This site is built with [Hugo](https://gohugo.io/) and the [Rose Hugo](https://github.com/chensoul/rose-hugo) theme.

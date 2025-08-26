@@ -55,6 +55,8 @@
 			</div>
 			{{- if .IsHome }}
 			{{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
+			{{- else if eq .Kind "page" }}
+			{{ block "sidebar" . }}{{ end }}
 			{{- end }}
 		</div>
 		{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
