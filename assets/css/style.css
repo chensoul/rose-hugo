@@ -970,7 +970,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .list__thumbnail img {
 	width: 100%;
-	max-width: 235px;
+	max-width: 135px;
 }
 
 .list__footer-readmore {
