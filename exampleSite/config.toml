@@ -43,13 +43,13 @@ ignoreLogs = ['warning-goldmark-raw-html']
   authorIntro = "A developer from China Wuhan, mostly writing about software development and open-source. <br> Browse my [blog posts](/posts), subscribe to my [RSS feed](/index.xml), or learn more [about me](/about/)."
 
   # Content
-  toc = true
+  toc = false
   post_meta = ["date", "categories", "author"]
   mainSections = ["posts"]
   dateformat = "2006-01-02"
 
   # Math & Diagrams
-  mathjax = true
+  mathjax = false
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
   mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.6/MathJax.min.js"
 
