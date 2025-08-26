@@ -119,14 +119,12 @@ theme = "rose-hugo"
 defaultContentLanguage = "en"
 
 [params]
-  author = "Your Name"
-  description = "Your site description"
   avatar = "/images/avatar.jpg"
-
-  # Enable features
-  opengraph = true
-  schema = true
-  twitter_cards = true
+  logo = "/image/logo.svg" # Logo image
+  subtitle = "Just another hugo theme" # Logo subtitle
+  description = "A Personal blog about everything" # Description of your site
+  authorbox = true # Show authorbox at bottom of pages if true
+  authorIntro = "A developer from China Wuhan, mostly writing about software development and open-source. <br> Browse my [blog posts](/posts), subscribe to my [RSS feed](/index.xml), or learn more [about me](/about/)."
 
 [params.sidebar]
   home = "right"
@@ -155,9 +153,9 @@ defaultContentLanguage = "en"
 <summary>📋 Complete Configuration Example</summary>
 
 ```toml
-baseURL = "https://yoursite.com"
-title = "Your Site Title"
-defaultContentLanguage = "en"
+baseurl = "/"
+title = "Rose Hugo"
+defaultContentLanguage = 'zh-cn'
 theme = "rose-hugo"
 
 summaryLength = 3
@@ -167,43 +165,61 @@ ignoreLogs = ['warning-goldmark-raw-html']
   pagerSize = 10
 
 [permalinks]
-  posts = "/posts/:year/:month/:day/:slug/"
-  categories = "/categories/:slug/"
-  tags = "/tags/:slug/"
+  posts="/posts/:year/:month/:day/:slug/"
+  categories="/categories/:slug/"
+  tags="/tags/:slug/"
+  pages="/:slug/"
 
-[params]
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "分类"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5
+
+[Params]
   author = "Your Name"
-  avatar = "/images/avatar.jpg"
-  logo = "/image/logo.svg" # Logo image
-  subtitle = "Just another hugo theme" # Logo subtitle
-  description = "A Personal blog about everything" # Description of your site
-  authorbox = true # Show authorbox at bottom of pages if true
-  authorIntro = "A developer from China Wuhan, mostly writing about software development and open-source. <br> Browse my [blog posts](/posts), subscribe to my [RSS feed](/index.xml), or learn more [about me](/about/)."
+    avatar = "/images/avatar.jpg"
+    logo = "/image/logo.svg" # Logo image
+    subtitle = "Just another hugo theme" # Logo subtitle
+    description = "A Personal blog about everything" # Description of your site
+    authorbox = true # Show authorbox at bottom of pages if true
+    authorIntro = "A developer from China Wuhan, mostly writing about software development and open-source. <br> Browse my [blog posts](/posts), subscribe to my [RSS feed](/index.xml), or learn more [about me](/about/)."
+    
+    # Content
+    toc = true
+    post_meta = ["date", "categories", "tags"]
+    mainSections = ["posts"]
+    dateformat = "2006-01-02"
   
-  # Content
-  authorbox = true
-  toc = true
-  post_meta = ["date", "categories", "tags"]
-  mainSections = ["posts"]
-  dateformat = "2006-01-02"
+    # Math & Diagrams
+    mathjax = true
+    mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+    mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.9/MathJax.min.js"
+    
+    mermaid="https://cdn.jsdmirror.com/npm/mermaid@11.8.0/dist/mermaid.min.js"
 
-  # Math & Diagrams
-  mathjax = true
-  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-  mathjaxPath = "https://cdn.jsdmirror.com/npm/mathjax@2.7.9/MathJax.min.js"
-  
-  mermaid="https://cdn.jsdmirror.com/npm/mermaid@11.8.0/dist/mermaid.min.js"
+[Params.sidebar]
+  home = "right" # Position of sidebar on home page: "left", "right", "none"
+  # Enable widgets in given order: "search", "recent", "categories", "taglist", "languages"
+  widgets = ["search", "recent", "categories", "taglist"]
 
-[params.style]
-  highlightColor = "#e22d30"
-  fontFamilyPrimary = '"Open Sans", sans-serif'
-  fontFamilySecondary = '"Fira Code", monospace'
+[Params.thumbnail]
+  # Control thumbnail visibility, eg: list、post
+  visibility = ["list"]
 
-[params.sidebar]
-  home = "right"
-  widgets = ["search", "recent", "categories", "taglist", "social"]
-
-[params.widgets.social]
+[Params.widgets.social]
   cached = false # activate cache if true
   facebook = "username"
   twitter = "username"
@@ -215,6 +231,24 @@ ignoreLogs = ['warning-goldmark-raw-html']
   bitbucket = "username"
   email = "username@gmail.com"
   youtube = "username"
+
+[Params.style]
+  highlightColor = "#e22d30"
+  fontFamilyPrimary = '"Open Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Helvetica, Arial, sans-serif'
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+
+[params.remark42]
+  enabled = true
+  host = "https://comment.chensoul.cc"
+  site = "remark"
+  locale = "zh"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS"]
 ```
 
 </details>
