@@ -199,6 +199,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
     
     # Content
     toc = true
+    readmore = false
     post_meta = ["date", "categories", "author"]
     mainSections = ["posts"]
     dateformat = "2006-01-02"
