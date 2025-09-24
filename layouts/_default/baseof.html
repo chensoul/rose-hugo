@@ -21,7 +21,7 @@
 	<link rel="preconnect" href="//fonts.loli.net" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.loli.net">
 	<link rel="stylesheet" href="https://fonts.loli.net/css?family=Open+Sans:400,400i,700">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
