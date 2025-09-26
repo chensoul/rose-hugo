@@ -18,3 +18,4 @@ Thumbs.db
 .LSOverride
 Desktop.ini
 /exampleSite/.hugo_build.lock
+/package-lock.json
