@@ -1,5 +1,5 @@
 {{- $root := . -}}
-{{- $post_meta := .Param "post_meta" | default (slice "date" "categories" "author") -}}
+{{- $post_meta := .Param "post_meta" | default (slice "date" "categories" "tags") -}}
 {{- range $field := $post_meta -}}
 	{{- $p := printf "post_meta/%s.html" $field -}}
 	{{- partial $p $root -}}

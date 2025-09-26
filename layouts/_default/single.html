@@ -12,22 +12,25 @@
 			{{ .Content }}
 		</div>
 
-		<footer class="post__footer">
-			{{- if .Params.tags }}
-			<footer class="post__footer">
-				{{ partial "post_tags.html" . }}
-			</footer>
-			{{- end }}
-		</footer>
+
 	</article>
 </main>
-{{ partial "pager.html" . }}
 
 {{- if .Params.categories }}
 <footer class="post__footer">
 	{{ partial "post_related.html" . }}
 </footer>
 {{- end }}
+
+<footer class="post__footer">
+	{{- if .Params.tags }}
+	<footer class="post__footer">
+		{{ partial "post_tags.html" . }}
+	</footer>
+	{{- end }}
+</footer>
+
+{{ partial "pager.html" . }}
 
 {{ partial "authorbox.html" . }}
 {{ partial "comments.html" . }}

@@ -312,6 +312,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
+	color: #666;
 	border-left: 5px solid {{ $highlightColor }};
 }
 
@@ -649,7 +650,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	padding: 5px 0;
 	margin-top: 10px;
 	margin-top: .625rem;
-	border-top: 1px dotted #ebebeb;
 	border-bottom: 1px dotted #ebebeb;
 }
 
@@ -1002,7 +1002,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	padding-top: 15px;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #ebebeb;
 }
 
 .pagination__subtitle {
@@ -1040,6 +1039,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 /* 相关文章区美化 */
 .post-related {
+    padding: 15px 0;
+	border-top: 1px solid #ebebeb;
 	padding-bottom: 10px;
 }
 .post-related h3 {
