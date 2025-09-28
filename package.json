@@ -11,7 +11,7 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^17.0.0",
     "postcss-cli": "^11.0.0",
-    "stylelint": "^15.11.0",
+    "stylelint": "^16.0.0",
     "stylelint-order": "^6.0.3"
   },
   "scripts": {
