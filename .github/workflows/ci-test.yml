@@ -4,11 +4,7 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "README.md"
   pull_request:
-    paths-ignore:
-      - "README.md"
 
 jobs:
   lint:
@@ -19,8 +15,8 @@ jobs:
           - '20.x'
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: ${{ matrix.node }}
 
@@ -40,7 +36,7 @@ jobs:
       fail-fast: true
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Run Hugo ${{ matrix.hugo }}
         uses: peaceiris/actions-hugo@v3
