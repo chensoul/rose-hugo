@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">{{ .Title }}</h1>
+	</header>
+	{{- with .Content }}
+	<div class="content main__content clearfix">
+		{{ . }}
+	</div>
+	{{- end }}
+	
+	<div class="tags-simple-container">
+		{{- $tags := .Site.Taxonomies.tags }}
+		{{- if gt (len $tags) 0 }}
+		<div class="tags-simple-list">
+			{{- range $name, $taxonomy := $tags }}
+				{{- with $.Site.GetPage (printf "/tags/%s" $name) }}
+				<div class="tags-simple-item">
+					<a href="{{ .RelPermalink }}" class="tags-simple-link">
+						<span class="tags-simple-name">{{ .Title }}</span>
+						<span class="tags-simple-count">{{ $taxonomy.Count }}</span>
+					</a>
+				</div>
+				{{- end }}
+			{{- end }}
+		</div>
+		{{- else }}
+		<div class="no-tags">
+			<p>暂无标签</p>
+		</div>
+		{{- end }}
+	</div>
+</main>
+
+{{ end }}
