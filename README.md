@@ -249,7 +249,23 @@ ignoreLogs = ['warning-goldmark-raw-html']
   category = "categories"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  page = ["HTML", "Markdown"]
+  home = ["HTML", "RSS", "JSON", "TXT"]
+
+[mediaTypes."text/markdown"]
+  suffixes = ["md"]
+
+[outputFormats.Markdown]
+  mediaType = "text/markdown"
+  isPlainText = true
+  isHTML = false
+  baseName = "index"
+  rel = "alternate"
+
+[outputFormats.TXT]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
 ```
 
 </details>
