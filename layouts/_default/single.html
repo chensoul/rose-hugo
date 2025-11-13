@@ -12,15 +12,9 @@
 			{{ .Content }}
 		</div>
 
-
+		<hr/>
 	</article>
 </main>
-
-{{- if .Params.categories }}
-<footer class="post__footer">
-	{{ partial "post_related.html" . }}
-</footer>
-{{- end }}
 
 <footer class="post__footer">
 	{{- if .Params.tags }}
@@ -31,6 +25,11 @@
 </footer>
 
 {{ partial "pager.html" . }}
+{{- if .Params.categories }}
+<footer class="post__footer">
+	{{ partial "post_related.html" . }}
+</footer>
+{{- end }}
 
 {{ partial "authorbox.html" . }}
 {{ partial "comments.html" . }}
