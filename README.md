@@ -250,7 +250,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [outputs]
   page = ["HTML", "Markdown"]
-  home = ["HTML", "RSS", "JSON", "TXT"]
+  home = ["HTML", "RSS", "TXT"]
 
 [mediaTypes."text/markdown"]
   suffixes = ["md"]
