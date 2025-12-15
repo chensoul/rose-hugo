@@ -6,7 +6,7 @@ categories:
 tags:
   - "HTML"
   - "CSS"
-thumbnail: "image/placeholder.png"
+thumbnail: "images/placeholder.png"
 ---
 
 The main purpose of this article is to make sure that all basic HTML Elements are decorated with CSS so as to not miss any possible elements when creating new themes for Hugo.

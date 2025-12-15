@@ -18,10 +18,6 @@
 	<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 	<meta name="twitter:image" content="{{ with .Params.thumbnail }}{{ . }}{{ else }}{{ .Site.Params.ogImage }}{{ end }}">
 
-	<link rel="preconnect" href="//fonts.loli.net" crossorigin>
-	<link rel="dns-prefetch" href="//fonts.loli.net">
-	<link rel="dns-prefetch" href="//cdnjs.loli.net">
-	
 	{{- /* Preload critical resources */ -}}
 	{{- with .Site.Params.logo -}}
 	<link rel="preload" href="{{ . | relURL }}" as="image" type="image/svg+xml">
@@ -29,10 +25,6 @@
 	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
 	<link rel="preload" href="{{ $style.RelPermalink }}" as="style">
 	
-	<link rel="stylesheet" href="https://fonts.loli.net/css?family=Open+Sans:400,400i,700&display=swap">
-	<!-- Font Awesome: Load asynchronously from loli.net CDN (国内加速) to avoid blocking render -->
-	<link rel="preload" href="https://cdnjs.loli.net/ajax/libs/font-awesome/7.0.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 	{{- with .OutputFormats.Get "rss" }}
