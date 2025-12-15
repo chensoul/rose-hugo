@@ -5,7 +5,7 @@
 	<h4 class="widget__title">{{ T "recent_title" }}</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			{{- range first 10 $recent }}
+			{{- range first 5 $recent }}
 			<li class="widget__item"><a class="widget__link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 			{{- end }}
 		</ul>

@@ -11,7 +11,7 @@
 		{{- end }}
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		{{ .Summary }}
+		{{ .Summary | truncate 200 }}
 	</div>
 	{{- if .Site.Params.readmore }}
 	{{- if .Truncated }}
