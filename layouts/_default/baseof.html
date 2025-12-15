@@ -31,7 +31,15 @@
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 
-	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	{{- /* Favicon: Optimized loading with SVG first, then fallback to ICO */ -}}
+	{{- if .Site.Params.logo -}}
+	<link rel="icon" type="image/svg+xml" href="{{ .Site.Params.logo | relURL }}">
+	{{- end -}}
+	<link rel="alternate icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
+	{{- /* Apple Touch Icon for iOS */ -}}
+	{{- if .Site.Params.avatar -}}
+	<link rel="apple-touch-icon" href="{{ .Site.Params.avatar | relURL }}">
+	{{- end -}}
 	{{- $server := "" }}
 	{{- if gt (int (index (split hugo.Version ".") 1)) "120" }}
 		{{ $server = hugo.IsServer }}
