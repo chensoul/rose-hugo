@@ -1,7 +1,8 @@
 {{- $highlightColor := .Site.Params.style.highlightColor | default "#e22d30" -}}
 
-{{- $fontSans := `"Open Sans", Helvetica, Arial, sans-serif` -}}
-{{- $fontMono := `SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` -}}
+{{- /* System font stack optimized for macOS, Windows, and other platforms */ -}}
+{{- $fontSans := `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"` -}}
+{{- $fontMono := `ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace` -}}
 {{- $fontFamilyPrimary := .Site.Params.style.fontFamilyPrimary | default $fontSans -}}
 {{- $fontFamilySecondary := .Site.Params.style.fontFamilySecondary | default $fontMono -}}
 
