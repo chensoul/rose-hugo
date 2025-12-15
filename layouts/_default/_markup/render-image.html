@@ -1,0 +1,20 @@
+{{- $image := .Destination | relURL -}}
+{{- $alt := .Text | default "Image" -}}
+{{- $title := .Title -}}
+{{- $isExternal := hasPrefix .Destination "http" -}}
+
+{{- if $isExternal -}}
+	{{- $image = .Destination -}}
+{{- end -}}
+
+<img src="{{ $image }}" 
+     alt="{{ $alt }}"
+     {{- if $title }} title="{{ $title }}"{{ end -}}
+     loading="lazy"
+     decoding="async"
+     {{- if not $isExternal -}}
+     width="800"
+     height="450"
+     {{- end -}}
+     class="content-image">
+
